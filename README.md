@@ -15,6 +15,7 @@ A continuación se presentan los análisis y conclusiones realizados de cada evi
 
 ---
 ## Módulo 1 Construcción de un modelo estadístico base.
+    Archivo: _"Modulo1_Peces&Mercurio.ipynb"_
 ### Preguntas
 
 ¿Hay evidencia para suponer que la concentración promedio de mercurio en los lagos es dañina para la salud humana? Considera que las normativas de referencia para evaluar los niveles máximos de Hg (Reglamento 34687-MAG y los reglamentos internacionales CE 1881/2006 y Codex Standard 193-1995) establecen que la concentración promedio de mercurio en productos de la pesca no debe superar los 0.5 mg de Hg/kg.
@@ -45,7 +46,7 @@ Ahora bien, analizando las relaciones de los datos, nuestra hipótesis nula (H0)
 
 ---
 ## Módulo 2 Implementación de una técnica de aprendizaje máquina sin el uso de un framework.
-
+    Archivo: _"Modulo2_RegresionLineal(Algoritmo).ipynb"_
 En esta práctica se implementó un modelo de regresión lineal de manera iterativa sin el uso de una librería externa. Unicamente _Pandas_ utilizada para la manipulación del dataset. Teniendo esto, yo soy una persona apasionada por la comida y la salud. Por ese motivo dentro de esta práctica se utiliza el dataset _mc-donalds-menu.csv_ el cual contiene el desglose de la información nutrimental de las principales 260 comidas disponibles en el menú de McDonald 's.
 
 Para hacer una comparación correcta, se analizan dos datos en específico:
@@ -68,19 +69,25 @@ Así mismo, considero que la selección de datos entre los datos de entrenamient
 
 
 
+<!-- El Github incluye la descripción de la entrega (ya sea en el readme o en un documento) y contiene todos los elementos solicitados (librería utilizada, dataset usado, métrica de desempeño (valor logrado sobre el subset de prueba), predicciones de prueba (entradas, valor esperado, valor obtenido), nombre del archivo a revisar) -->
 ---
 ## Módulo 2 Uso de framework o biblioteca de aprendizaje máquina para la implementación de una solución.
-Dentro de este modelo se implemento la librería Sklearn para para llevar acabo el modelo nombrado _Neural Network Multi-layer Perceptron classifier_, el cual nos permite modelar con un formato a e conexiones neuronales para hacer predicciones.
+    Archivo: _"Modulo2_NeuralNetwork(Framework).ipynb"_
+Con esta práctica, lo que se busca es entrenar un modelo con el propósito de definir / clasificar de manera correcta las diferentes Clases. Para entrar mejor en contexto, dentro de esta práctica se utiliza un dataset _wines.csv_ el cual tiene información de 178 vinos diferentes. Todos los vinos corresponden a una "clase" según sus atributos. Dentro de la práctica se entrena un modelo con el propósito de definir la clase a la cual pertenece un dado vino tomando en cuenta sus atributos.
 
-Así mismo, se utilizo el data set ya definido en este curso de _wines.csv_ para correr las predicciones dentro de este. Como métrica de desempeño se considero la clase a la que pertenece cada alcohol (1, 2 o 3). 
+Ahora bien en este modelo se implementó la librería Sklearn para para llevar a cabo el modelo nombrado _Neural Network Multi-layer Perceptron classifier_, el cual nos permite modelar con un formato de conexiones neuronales para hacer predicciones.
 
-Para definir los valores de entrenamiento, y los valores de prueba, utilize una librería igualmente de Sklearn para dividir los datos de manera aleatoria. Esto nos da nuestros valores Y y X de entrenamiento al igual que nuestros valores Y y X de prueba. Teniendo nuestros valores inicializamos el modelo ya definido por Sklearn, y lo entrenamos por medio de la función _fit()_ en donde le pasamos nuestros valores X de entrenamiento y prueba. Teniendo esto hacemos una predicción con base a nuestras classes para ajustar el modelo con base a las X.
+Como ya mencione, se utilizó el dataset ya definido en este curso de _wines.csv_ para correr las predicciones dentro de este. Como métrica de desempeño se consideró la clase a la que pertenece cada alcohol (1, 2 o 3). 
+
+Para definir los valores de entrenamiento, y los valores de prueba, utilice una librería igualmente de Sklearn para dividir los datos de manera aleatoria. Esto nos da nuestros valores Y y X de entrenamiento al igual que nuestros valores Y y X de prueba. Teniendo nuestros valores inicializamos el modelo ya definido por Sklearn, y lo entrenamos por medio de la función _fit()_ en donde le pasamos nuestros valores X de entrenamiento y prueba. Teniendo esto hacemos una predicción con base a nuestras clases para ajustar el modelo con base a las X.
 
 Teniendo esta predicción acabamos! Podemos visualizar los resultados de dos maneras:
-- "confusion_matrix" para representar cómo es que se distribuyen los datos través de las 3 classes que tenemos presentes.
+- "confusion_matrix" para representar cómo es que se distribuyen los datos través de las 3 clases que tenemos presentes.
 - "classification_report" para representar la correlaciones y el grado de confiabilidad del modelo con base a los datos proporcionados.
 
-En las pruebas realizadas arriba, se puede visualizar que con los datos de entrenamiento obtuvimos un grado de confianza y certeza de 1.00 (100%)
-Si embargo en la pruebas realizadas con los datos de prueba, obtuvimos un 0.97 (97%) de certeza.
+En las pruebas realizadas arriba, se puede visualizar que con los datos de entrenamiento obtuvimos un grado de confianza y certeza de 1.00 (100%). Lo que esto no dice es que para cada vino, el modelo fue capaz de agrupar basándose únicamente en los atributos, la clase a la que pertenece dicho vino. Esto lo verifica con los datos de entrada que son el conjunto de atributos, y basados en estos relaciona correctamente el valor esperado (Clase ya definida en el dataset) con el valor obtenido (clase la cual fue predecida por el modelo).
+Sin embargo en la pruebas realizadas con los datos de prueba, obtuvimos un 0.97 (97%) de certeza. De manera similar, el modelo logró realizar las mismas predicciones previamente descritas, solo que con un 97% de nivel de confianza. Lo que esto nos dice es que un 3% de las predicciones no va a coincidir el valor esperado con el valor obtenido.
 
-Dicho esto, una limitación de esta prueba considero es el tamaño de la muestra. Wines tiene un conjunto de 178 campos por columna. Teniendo mas datos a los que analizar se pudiera realizar un mejor ajuste del modelo y posiblemente una mejor predicción al final.
+Dicho esto, una limitación de esta prueba considero es el tamaño de la muestra. Wines tiene un conjunto de 178 campos por columna. Teniendo más datos a los que analizar se pudiera realizar un mejor ajuste del modelo y posiblemente una mejor predicción al final el cual nos ayude reducir el porcentaje de error de 3% en el modelo.
+
+
