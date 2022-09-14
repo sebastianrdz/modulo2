@@ -15,28 +15,30 @@ A continuación se presentan los análisis y conclusiones realizados de cada evi
 
 ---
 ## Módulo 1 Construcción de un modelo estadístico base.
-Preguntas
+### Preguntas
 
-¿Hay evidencia para suponer que la concentración promedio de mercurio en los lagos es dañino para la salud humana? Considera que las normativas de referencia para evaluar los niveles máximos de Hg (Reglamento 34687-MAG y los reglamentos internacionales CE 1881/2006 y Codex Standard 193-1995) establecen que la concentración promedio de mercurio en productos de la pesca no debe superar los 0.5 mg de Hg/kg.
-- En promedio se presenta una concentración de 0.4mg de Hg/kg. en los productos de pesca, lo cual puede ser considerado seguro para el consumo de las personas. Sin embargo, se presentan la otra mitad de los datos productos de pesca que van del rango de 0.6mg de Hg/kg hasta los 1.2mg de Hg/kg los que pudieran se considerados excesivamente peligrosos.
+¿Hay evidencia para suponer que la concentración promedio de mercurio en los lagos es dañina para la salud humana? Considera que las normativas de referencia para evaluar los niveles máximos de Hg (Reglamento 34687-MAG y los reglamentos internacionales CE 1881/2006 y Codex Standard 193-1995) establecen que la concentración promedio de mercurio en productos de la pesca no debe superar los 0.5 mg de Hg/kg.
+- En promedio se presenta una concentración de 0.4mg de Hg/kg. en los productos de pesca, lo cual puede ser considerado seguro para el consumo de las personas. Sin embargo, se presentan la otra mitad de los datos productos de pesca que van del rango de 0.6mg de Hg/kg hasta los 1.2mg de Hg/kg los que pudieran ser considerados excesivamente peligrosos.
 
 ¿Habrá diferencia significativa entre la concentración de mercurio por la edad de los peces?
-- Sí, la edad tiene gran relación en los niveles de mercurio. En una grafica presentada previamente podemos ver que la mayor cantidad de peces jóvenes tienden a tener niveles de mercurio mas bajos que no superan los 0.4mg. Por otro lado podemos ver que hay pescados adultos que presentan mayores niveles de mercurio superando los 0.5mg como limite.
+- Sí, la edad tiene gran relación en los niveles de mercurio. En una gráfica presentada previamente podemos ver que la mayor cantidad de peces jóvenes tienden a tener niveles de mercurio más bajos que no superan los 0.4mg. Por otro lado podemos ver que hay pescados adultos que presentan mayores niveles de mercurio superando los 0.5mg como límite.
 
 Si el muestreo se realizó lanzando una red y analizando los peces que la red encontraba ¿Habrá influencia del número de peces encontrados en la concentración de mercurio en los peces?
-- Considerando únicamente una zona, no tendría mucha influencia ya que seria una variable más controlada para determinar de manera aleatoria los niveles de mercurio en una prueba.
+- Considerando únicamente una zona, no tendría mucha influencia ya que sería una variable más controlada para determinar de manera aleatoria los niveles de mercurio en una prueba.
 
 ¿Las concentraciones de alcalinidad, clorofila, calcio en el agua del lago influyen en la concentración de mercurio de los peces?
 - No tanto, mejor dicho, estas variables se ven distorsionadas a causa de las diferentes concentraciones a través de los productos de pesca.
 
 
-Conclusión
+### Conclusión
 - H0: No hay ninguna relación entre los factores analizados y los niveles de mercurio encontrados en los peces.
 - H1: Sí hay una relación entre los factores analizados y los niveles de mercurio encontrados en los peces.
 
-Podemos concluir que uno de los factores que mayor impacto tiene en la concentración de los pescados es la edad del pescado tal cual. Una me las más grandes correlaciones que puede identificar fue que en su mayoría, los pescados jóvenes tienen una menor concentración de mercurio en comparación de los pescados adultos. Esto puede indicar que los pescados jóvenes han estado en menor contacto con factores externos (Clorofila, calcio, etc.) en comparación a los adultos. Así mismo puede ser algún otro factor de la anatomía del pescado que trasciende en medida en que envejecen.
+Primero que nada, es importante aclarar que no podemos tomar en cuenta todos los datos dado a que hay unos que son similares entre sí lo que siempre nos retorna una correlación, Por ejemplo el mercurio promedio y el mercurio máximo. Estos dos atributos miden lo mismo, por lo que no podemos hacer una relación adecuada entre estos a pesar de tener gran correlación entre sí. Por esta razón, dentro del modelo únicamente se toman en cuenta las variables de alcalinidad, PH, calcio, clorofila y edad (indicador de pescado). Dentro de esta práctica se uno un modelo de de regresion lineal y correlación con el propósito de analizar cómo cada atributo definido anteriormente afecta o tiene relación con base al nivel de mercurio que se encuentra en el pescado.
 
-Ahora bien, analizando las relaciones de los datos, nuestra hipótesis nula (H0) es rechazada y nuestra hipótesis alternativa aceptada. Esto dado a que debido a las correlaciones analizadas en la parte superior, podemos ver que hay cuatro factores que afectan los niveles de mercurio en un rango moderado. Estos son la alcalinidad, PH, calcio y clorofila. Estos cuatro factores tienen una correlación moderada entre 0.4 y 0.6 al compararla con el promedio de mercurio encontrado en los peces. Esto indica que estas variables, mientras que no en su totalidad, afectan los niveles de mercurio. Importante notar que son dependencias negativas, indicando que a medida en que estos factores diminuyen, los niveles de mercurio incrementan.
+Podemos concluir que uno de los factores que mayor impacto tiene en la concentración de los pescados es la edad del pescado tal cual. Una de las más grandes correlaciones que puede identificar fue que en su mayoría, los pescados jóvenes tienen una menor concentración de mercurio en comparación con los pescados adultos. Esto puede indicar que los pescados jóvenes han estado en menor contacto con factores externos (Clorofila, calcio, etc.) en comparación a los adultos. Así mismo puede ser algún otro factor de la anatomía del pescado que trasciende en la medida en que envejecen.
+
+Ahora bien, analizando las relaciones de los datos, nuestra hipótesis nula (H0) es rechazada y nuestra hipótesis alternativa _"Sí hay una relación entre los factores analizados y los niveles de mercurio encontrados en los peces."_ es aceptada. Esto dado a que debido a las correlaciones analizadas en la parte superior, podemos ver que hay cuatro factores que afectan los niveles de mercurio en un rango moderado. Estos son la alcalinidad, PH, calcio y clorofila. Estos cuatro factores tienen una correlación moderada entre 0.4 y 0.6 al compararla con el promedio de mercurio encontrado en los peces. Esto indica que estas variables, mientras que no en su totalidad, afectan los niveles de mercurio. Es importante notar que son dependencias negativas, indicando que a medida en que estos factores disminuyen, los niveles de mercurio se incrementan. Las gráficas de de relaciones presentadas son de gran ayuda para identificar y visualizar cómo se comportan las diferentes variables en comparación. La alcalinidad, PH, calcio y clorofila en particular muestran la correlación negativa que se presentan al compararlas con el nivel de mercurio promedio.
 <br><br>
 
 
