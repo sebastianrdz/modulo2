@@ -73,6 +73,7 @@ Así mismo, considero que la selección de datos entre los datos de entrenamient
 ---
 ## Módulo 2 Uso de framework o biblioteca de aprendizaje máquina para la implementación de una solución.
     Archivo: _"Modulo2_NeuralNetwork(Framework).ipynb"_
+    Google Colab: https://colab.research.google.com/drive/1pCAcCLgTcQzARZNfbk02lUGaU1QECfdc?usp=sharing
 Con esta práctica, lo que se busca es entrenar un modelo con el propósito de definir / clasificar de manera correcta las diferentes Clases. Para entrar mejor en contexto, dentro de esta práctica se utiliza un dataset _wines.csv_ el cual tiene información de 178 vinos diferentes. Todos los vinos corresponden a una "clase" según sus atributos. Dentro de la práctica se entrena un modelo con el propósito de definir la clase a la cual pertenece un dado vino tomando en cuenta sus atributos.
 
 Ahora bien en este modelo se implementó la librería Sklearn para para llevar a cabo el modelo nombrado _Neural Network Multi-layer Perceptron classifier_, el cual nos permite modelar con un formato de conexiones neuronales para hacer predicciones.
