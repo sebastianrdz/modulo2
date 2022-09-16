@@ -15,20 +15,20 @@ A continuación se presentan los análisis y conclusiones realizados de cada evi
 
 ---
 ## Módulo 1 Construcción de un modelo estadístico base.
-    Archivo: _"Modulo1_Peces&Mercurio.ipynb"_
+> Archivo: _"Modulo1_Peces&Mercurio.ipynb"_
+
 ### Preguntas
+- ¿Hay evidencia para suponer que la concentración promedio de mercurio en los lagos es dañina para la salud humana? Considera que las normativas de referencia para evaluar los niveles máximos de Hg (Reglamento 34687-MAG y los reglamentos internacionales CE 1881/2006 y Codex Standard 193-1995) establecen que la concentración promedio de mercurio en productos de la pesca no debe superar los 0.5 mg de Hg/kg.
+  > En promedio se presenta una concentración de 0.4mg de Hg/kg. en los productos de pesca, lo cual puede ser considerado seguro para el consumo de las personas. Sin embargo, se presentan la otra mitad de los datos productos de pesca que van del rango de 0.6mg de Hg/kg hasta los 1.2mg de Hg/kg los que pudieran ser considerados excesivamente peligrosos.
 
-¿Hay evidencia para suponer que la concentración promedio de mercurio en los lagos es dañina para la salud humana? Considera que las normativas de referencia para evaluar los niveles máximos de Hg (Reglamento 34687-MAG y los reglamentos internacionales CE 1881/2006 y Codex Standard 193-1995) establecen que la concentración promedio de mercurio en productos de la pesca no debe superar los 0.5 mg de Hg/kg.
-- En promedio se presenta una concentración de 0.4mg de Hg/kg. en los productos de pesca, lo cual puede ser considerado seguro para el consumo de las personas. Sin embargo, se presentan la otra mitad de los datos productos de pesca que van del rango de 0.6mg de Hg/kg hasta los 1.2mg de Hg/kg los que pudieran ser considerados excesivamente peligrosos.
+- ¿Habrá diferencia significativa entre la concentración de mercurio por la edad de los peces?
+  > Sí, la edad tiene gran relación en los niveles de mercurio. En una gráfica presentada previamente podemos ver que la mayor cantidad de peces jóvenes tienden a tener niveles de mercurio más bajos que no superan los 0.4mg. Por otro lado podemos ver que hay pescados adultos que presentan mayores niveles de mercurio superando los 0.5mg como límite.
 
-¿Habrá diferencia significativa entre la concentración de mercurio por la edad de los peces?
-- Sí, la edad tiene gran relación en los niveles de mercurio. En una gráfica presentada previamente podemos ver que la mayor cantidad de peces jóvenes tienden a tener niveles de mercurio más bajos que no superan los 0.4mg. Por otro lado podemos ver que hay pescados adultos que presentan mayores niveles de mercurio superando los 0.5mg como límite.
+- Si el muestreo se realizó lanzando una red y analizando los peces que la red encontraba ¿Habrá influencia del número de peces encontrados en la concentración de mercurio en los peces?
+  > Considerando únicamente una zona, no tendría mucha influencia ya que sería una variable más controlada para determinar de manera aleatoria los niveles de mercurio en una prueba.
 
-Si el muestreo se realizó lanzando una red y analizando los peces que la red encontraba ¿Habrá influencia del número de peces encontrados en la concentración de mercurio en los peces?
-- Considerando únicamente una zona, no tendría mucha influencia ya que sería una variable más controlada para determinar de manera aleatoria los niveles de mercurio en una prueba.
-
-¿Las concentraciones de alcalinidad, clorofila, calcio en el agua del lago influyen en la concentración de mercurio de los peces?
-- No tanto, mejor dicho, estas variables se ven distorsionadas a causa de las diferentes concentraciones a través de los productos de pesca.
+- ¿Las concentraciones de alcalinidad, clorofila, calcio en el agua del lago influyen en la concentración de mercurio de los peces?
+  > No tanto, mejor dicho, estas variables se ven distorsionadas a causa de las diferentes concentraciones a través de los productos de pesca.
 
 
 ### Conclusión
@@ -46,7 +46,8 @@ Ahora bien, analizando las relaciones de los datos, nuestra hipótesis nula (H0)
 
 ---
 ## Módulo 2 Implementación de una técnica de aprendizaje máquina sin el uso de un framework.
-    Archivo: _"Modulo2_RegresionLineal(Algoritmo).ipynb"_
+> Archivo: _"Modulo2_RegresionLineal(Algoritmo).ipynb"_
+
 En esta práctica se implementó un modelo de regresión lineal de manera iterativa sin el uso de una librería externa. Unicamente _Pandas_ utilizada para la manipulación del dataset. Teniendo esto, yo soy una persona apasionada por la comida y la salud. Por ese motivo dentro de esta práctica se utiliza el dataset _mc-donalds-menu.csv_ el cual contiene el desglose de la información nutrimental de las principales 260 comidas disponibles en el menú de McDonald 's.
 
 Para hacer una comparación correcta, se analizan dos datos en específico:
@@ -72,8 +73,9 @@ Así mismo, considero que la selección de datos entre los datos de entrenamient
 <!-- El Github incluye la descripción de la entrega (ya sea en el readme o en un documento) y contiene todos los elementos solicitados (librería utilizada, dataset usado, métrica de desempeño (valor logrado sobre el subset de prueba), predicciones de prueba (entradas, valor esperado, valor obtenido), nombre del archivo a revisar) -->
 ---
 ## Módulo 2 Uso de framework o biblioteca de aprendizaje máquina para la implementación de una solución.
-    Archivo: _"Modulo2_NeuralNetwork(Framework).ipynb"_
-    Google Colab: https://colab.research.google.com/drive/1pCAcCLgTcQzARZNfbk02lUGaU1QECfdc?usp=sharing
+> Archivo: _"Modulo2_NeuralNetwork(Framework).ipynb"_ <br>
+> Google Colab: https://colab.research.google.com/drive/1pCAcCLgTcQzARZNfbk02lUGaU1QECfdc?usp=sharing
+
 Con esta práctica, lo que se busca es entrenar un modelo con el propósito de definir / clasificar de manera correcta las diferentes Clases. Para entrar mejor en contexto, dentro de esta práctica se utiliza un dataset _wines.csv_ el cual tiene información de 178 vinos diferentes. Todos los vinos corresponden a una "clase" según sus atributos. Dentro de la práctica se entrena un modelo con el propósito de definir la clase a la cual pertenece un dado vino tomando en cuenta sus atributos.
 
 Ahora bien en este modelo se implementó la librería Sklearn para para llevar a cabo el modelo nombrado _Neural Network Multi-layer Perceptron classifier_, el cual nos permite modelar con un formato de conexiones neuronales para hacer predicciones.
